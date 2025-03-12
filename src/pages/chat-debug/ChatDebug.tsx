@@ -52,6 +52,8 @@ const ChatDebug = () => {
   };
 
   useEffect(() => {
+    console.log('a');
+
     if (!entry) return;
     if (entry.isIntersecting) {
       getData();

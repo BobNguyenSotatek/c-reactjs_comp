@@ -7,6 +7,8 @@ const useKeepScrollPosition = (deps: unknown[]) => {
   const container = containerRef?.current;
 
   useMemo(() => {
+    console.log('container', container);
+
     if (container) {
       previousScrollPosition.current = container?.scrollHeight - container?.scrollTop;
     }

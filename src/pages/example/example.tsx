@@ -16,10 +16,20 @@ import { AppBox, AppDateRangePicker } from '../../components/base';
 import { type TypeTypography } from '../../shared/utils/theme';
 import { useState } from 'react';
 import Inputs from 'src/components/inputs/Inputs';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export function Example() {
   const [radioValueSelected, setRadioValueSelected] = useState<string>('');
   const [checked, setChecked] = useState([true, true, true]);
+
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(null);
+  const onChange = (dates) => {
+    const [start, end] = dates;
+    setStartDate(start);
+    setEndDate(end);
+  };
 
   return (
     <>
@@ -397,6 +407,13 @@ export function Example() {
               </Typography>
             </Box>
           </Box>
+
+          <DatePicker
+            selectsRange
+            startDate={startDate}
+            endDate={endDate}
+            onChange={onChange}
+          ></DatePicker>
         </Stack>
       </AppBox>
     </>

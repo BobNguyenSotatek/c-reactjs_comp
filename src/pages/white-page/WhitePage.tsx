@@ -5,6 +5,7 @@ import { useCallback, useEffect } from 'react';
 import { ShiftingDropDown } from 'src/components/layout/DropdownMenu';
 import { apiClient } from 'src/lib';
 import { usePopup } from 'src/states/ui/usePopup';
+import simonImage from '../../assets/images/mourad.jpg';
 
 const WhitePage = () => {
   const getUser = async () => {
@@ -37,6 +38,27 @@ const WhitePage = () => {
 
   return (
     <Box>
+      <Box
+        sx={{
+          border: '1px solid red',
+          textAlign: 'center',
+          width: '600px',
+        }}
+      >
+        <img
+          src={simonImage}
+          alt=""
+          width={100}
+          height={100}
+          style={{
+            width: '100%',
+            maxWidth: '70%',
+            height: '100%',
+            maxHeight: '800px',
+            marginTop: '1rem',
+          }}
+        />
+      </Box>
       <Button
         onClick={() => openPopup({ title: 'Title', content: '11111', button: null })}
         variant="contained"

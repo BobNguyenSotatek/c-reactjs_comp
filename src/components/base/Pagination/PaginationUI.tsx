@@ -50,7 +50,7 @@ const PaginationUI = ({
     setPage(value);
   };
 
-  const siblingCount = 1;
+  const siblingCount = 2;
   const boundaryCount = 1;
 
   const startPages = range(1, Math.min(boundaryCount, count));
