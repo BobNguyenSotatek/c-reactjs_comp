@@ -93,7 +93,7 @@ const Profile = () => {
         <MenuItem onClick={handleLogout}>
           <ListItemIcon>
             <LogoutIcon
-              sx={{
+              style={{
                 transform: 'rotate(180deg)',
               }}
             />

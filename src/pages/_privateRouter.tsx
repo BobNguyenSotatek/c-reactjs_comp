@@ -6,7 +6,7 @@ const PrivateRouter = () => {
     state: { isAuth },
   } = useAuth();
 
-  console.log('page private and check auth');
+  console.log('page private and check auth', isAuth);
 
   return !isAuth ? <Navigate to="/login" replace={true} /> : <Outlet />;
 };

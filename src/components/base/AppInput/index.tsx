@@ -11,7 +11,7 @@ export const AppInput = React.forwardRef(function AppInput(
   ref: React.ForwardedRef<HTMLUListElement>
 ) {
   const theme = useTheme();
-  const colors = theme.color || {};
+  const colors = theme.color;
   return (
     <>
       <InputBase

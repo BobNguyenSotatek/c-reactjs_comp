@@ -233,3 +233,9 @@
 // }
 
 // export default forwardRef(MainMenuContainer)
+
+const MainMenuContainer = () => {
+  return <></>;
+};
+
+export default MainMenuContainer;

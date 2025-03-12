@@ -1,5 +1,5 @@
 #Stage 1
-FROM node:alpine as builder
+FROM node:alpine AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN yarn run build
 
 #Stage 2
 FROM nginx:1.21.4-alpine
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf 
 

@@ -47,3 +47,9 @@
 // }
 
 // export default HamburgerMenu
+
+const HamburgerMenu = () => {
+  return <></>;
+};
+
+export default HamburgerMenu;

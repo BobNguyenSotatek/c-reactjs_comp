@@ -73,3 +73,9 @@
 // };
 
 // export default exportAsImage;
+
+const ExportAsImage = () => {
+  return 1;
+};
+
+export default ExportAsImage;

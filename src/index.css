@@ -19,8 +19,7 @@ code {
 }
 
 html {
-  //Cấu hình hành vi scroll của trang.
-  /* scroll-behavior: smooth; */
+  /* scroll-behavior: smooth; Cấu hình hành vi scroll của trang. */
 
   /* kết hợp với:
   <a href="#top">TOP</a>
